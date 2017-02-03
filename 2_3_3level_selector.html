@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>level selector</title>
+	<style type="text/css">
+	/* 层次选择器：后代选择器，子选择器，相邻兄弟选择器，通用兄弟选择器 */
+		*{margin: 0; padding: 0;}
+		body{width: 300px; margin: 0 auto;}
+		div{margin: 5px; padding: 5px; border: 1px solid #ccc;}
+		div div{background: orange;}/* 后代选择器：div下的div元素，不论多少级都会被选中 */
+		body > div{background: green;}/* 子选择器：只有一级的后代元素 */
+		.active + div{background: lime;}/* 相邻兄弟选择器：具有相同父元素的紧邻在active后的div元素 */
+		/* .active ~ div{background: red;}通用兄弟选择器：active后的所有兄弟元素 */
+	</style>
+</head>
+<body>
+	<div class="active">1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div>7
+		<div>8
+			<div>9
+				<div>10</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
