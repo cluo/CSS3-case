@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>struct class selector</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			margin: 50px auto;
+			width: 400px;
+			list-style: none outside none;
+		}
+		li{
+			display: inline-block;
+			margin: 5px;
+			padding: 5px;
+			width: 50px;
+			font:bold 30px/50px arial;
+			background: #000;
+			color: #fff;
+			border-radius: 50px;
+			text-align:center;
+		}
+		ul>li:first-child{
+			background-color: green;
+		}
+		ul>li:last-child{
+			background-color: blue;
+		}
+		ul>li:nth-child(3){/* 若括号中直接写n则所有li元素被选中，若写2n则偶数项被选中，写even也行，写2n+1表示奇数项
+		                       写n+5第五个li之后的所有元素被选中 */
+			background-color: yellow;
+		}
+		ul>li:nth-last-child(4){
+			background-color: red;
+		}
+
+		/* nth-of-type(n):父元素中指定类型的第n个子元素;
+		   nth-of-of-type(n):从后往前数;
+		   first-of-type
+		   last-of-type
+		   only-child:匹配元素必须是父元素中的唯一子元素;
+		   only-of-type:类型还必须符合; 
+
+		   第七节：UI元素状态伪类选择器
+		   E:checked:匹配选择的复选按钮或单选按钮表单元素
+		   E:enabled:匹配所有启用的表单元素;
+		   E:disabled:匹配所有启用的表单元素;
+
+		   第九节：否定伪类选择器
+		   E；not(F):匹配所有除元素F外的E元素*/
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+		<li>11</li>
+		<li>12</li>
+		<li>13</li>
+		<li>14</li>
+		<li>15</li>
+		<li>16</li>
+		<li>17</li>
+		<li>18</li>
+		<li>19</li>
+		<li>20</li>
+	</ul>
+</body>
+</html>
+<!-- 用时35分钟，总用时3小时6分钟 -->
