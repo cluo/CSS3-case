@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>border image</title>
+	<!-- border image包括引入的背景图片，切割引入的背景图片，边框图片的宽度，边框图片的排列方式 -->
+	<style type="text/css">
+		.border-image-btn{
+			display: inline-block;
+			border: 18px solid green;
+			border-width: 0 18px;
+			border-image: url("button_sprite.png") 0 18 50 18;
+			-webkit-border-image: url("button_sprite.png") 0 18 50 18;
+			padding: 13px 10px 17px;
+			font-size: 16px;
+			color: #fff;
+			font-weight: bold;
+			text-decoration: none;
+			margin: 10px;
+		}
+		.border-image-btn:hover{
+			border-image: url("button_sprite.png")50 18 0 18;
+			-webkit-border-image: url("button_sprite.png") 0 18 50 18;
+			color: #000;
+			border-color: yellow;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" class="border-image-btn">Click Me!</a>
+	<a href="#" class="border-image-btn">用力点我吧！</a>
+	<a href="#" class="border-image-btn">CSS3 Border-image Button</a>
+</body>
+</html>
+<!-- 用时27分钟，总用时4小时56分钟 -->

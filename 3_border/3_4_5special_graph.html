@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>special graph</title>
+	<!-- 圆角边框：注意各种表达方式 -->
+	<style type="text/css">
+		.circle{
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			border-radius: 50%;
+		}
+	    .semicircle{
+	    	width: 100px;
+	    	height: 50px;
+	    	border-radius: 100px 100px 0 0;/* 圆角半径为高度的值 */
+	    	background-color: green;
+	    	margin-top: 30px;
+	    }
+	    .sector{
+	    	width: 100px;
+	    	height: 100px;
+	    	border-radius: 100px 0 0 0;/* 圆角半径为高度的值 */
+	    	background-color: red;
+	    	margin-top: 30px;
+	    }
+	    .eclipse{
+	    	width: 100px;
+	    	height: 50px;
+	    	border-radius: 100px/50px;/* 圆角半径为高度的值 */
+	    	background-color: blue;
+	    	margin-top: 30px;
+	    }
+	</style>
+
+</head>
+<body>
+	<div class="circle"></div>
+	<div class="semicircle"></div>
+	<div class="sector"></div>
+	<div class="eclipse"></div>
+</body>
+</html>
+<!-- 用时15分钟，总用时5小时11分钟 -->
